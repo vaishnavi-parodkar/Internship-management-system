@@ -5,7 +5,7 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] != "admin") {
     exit();
 }
 
-$conn = new mysqli("localhost", "root", "", "login_register");
+$conn = new mysqli("localhost", "root", "", "internship_management");
 
 // Fetch stats
 $students = $conn->query("SELECT COUNT(*) AS total FROM students")->fetch_assoc()['total'];
@@ -20,7 +20,7 @@ $applications = $conn->query("SELECT COUNT(*) AS total FROM applications")->fetc
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="../css/admin.css">
 </head>
 <body>
 <div class="container-fluid">

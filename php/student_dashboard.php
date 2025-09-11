@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'database.php';
+require '../database.php';
 
 if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'student') {
     header("Location: login.php");
@@ -10,7 +10,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'student') {
 $user_id = $_SESSION['user_id'];
 
 // Fetch student info
-$stmt = $conn->prepare("SELECT course, year, skills FROM students WHERE user_id = ?");
+$stmt = $conn->prepare("SELECT course, year, skills, resume_link FROM students WHERE user_id = ?");
 $stmt->bind_param("i", $user_id);
 $stmt->execute();
 $result = $stmt->get_result();
@@ -23,7 +23,7 @@ $student = $result->fetch_assoc();
     <meta charset="UTF-8">
     <title>Student Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="student_dashboard.css">
+    <link rel="stylesheet" href="../css/student_dashboard.css">
 </head>
 <body class="p-4">
 
@@ -34,6 +34,13 @@ $student = $result->fetch_assoc();
         <p><strong>Course:</strong> <?= htmlspecialchars($student['course'] ?? 'Not updated') ?></p>
         <p><strong>Year:</strong> <?= htmlspecialchars($student['year'] ?? 'Not updated') ?></p>
         <p><strong>Skills:</strong> <?= htmlspecialchars($student['skills'] ?? 'Not updated') ?></p>
+        <p><strong>Resume:</strong>
+            <?php if (!empty($student['resume_link'])): ?>
+                <a href="<?= htmlspecialchars($student['resume_link']) ?>" target="_blank">View Resume</a>
+            <?php else: ?>
+                Not provided
+            <?php endif; ?>
+        </p>
 
         <div class="list-group mt-4">
             <a href="view_internships.php" class="list-group-item list-group-item-action">Browse Internships</a>

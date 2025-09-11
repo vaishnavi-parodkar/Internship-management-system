@@ -1,11 +1,13 @@
 <?php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db   = "internship_management"; // ✅ correct database name
 
-$hostName = "localhost";
-$dbUser = "root";
-$dbPassword = "";
-$dbName = "login_register";
-$conn = mysqli_connect($hostName, $dbUser, $dbPassword, $dbName);
-if(!$conn){
-    die("something went wrong");
+$conn = new mysqli("localhost", "root", "", "internship_management");
+
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 ?>

@@ -5,7 +5,8 @@ if (!isset($_SESSION["user_id"]) || $_SESSION["role"] != "admin") {
     exit();
 }
 
-require_once "database.php";
+require_once __DIR__ . '/../database.php';
+
 
 $result = $conn->query("SELECT i.id, i.title, i.description, i.location, i.duration, i.stipend, i.posted_on, u.full_name AS company
                         FROM internships i
@@ -18,6 +19,7 @@ $result = $conn->query("SELECT i.id, i.title, i.description, i.location, i.durat
 <head>
     <title>Manage Internships</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/manage_internships.css">
 </head>
 <body class="p-4">
 <h2>Manage Internships</h2>
