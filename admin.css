@@ -1,0 +1,85 @@
+/* Page background (same as login/logout page) */
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* Sidebar hidden on desktop */
+.sidebar {
+  position: fixed;
+  top: 0; 
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #111827;
+  color: white;
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1050;
+}
+.sidebar.active { left: 0; }
+.sidebar h2 { font-size: 1.4rem; margin-bottom: 20px; }
+.sidebar a {
+  display: block;
+  padding: 10px;
+  margin: 5px 0;
+  color: #d1d5db;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.2s ease;
+}
+.sidebar a:hover { background: #374151; color: #fff; }
+
+/* Toggle button (only for small screens) */
+.menu-btn {
+  background: #111827;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+.menu-btn:focus { outline: none; }
+
+@media (min-width: 992px) {
+  .sidebar { display: none; }
+  .menu-btn { display: none; }
+}
+
+/* Dashboard cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease-in-out;
+  color: black;   /* white text for contrast */
+}
+.card:hover { transform: translateY(-5px); }
+
+/* Contrast card colors */
+.bg-students { background: #2563eb; }     /* Deep Blue */
+.bg-companies { background: #059669; }    /* Emerald */
+.bg-internships { background: #d97706; }  /* Warm Amber */
+.bg-applications { background: #dc2626; } /* Strong Red */
+
+/* Section headings */
+h1, h3 {
+  color: #f3f4f6;
+  font-weight: 600;
+}
+.card ul {
+  list-style-type: disc;
+  list-style-position: inside; /* bullets closer to text */
+  margin: 0;
+  padding-left: 0; /* removes extra indent */
+}
+
+.card li {
+  margin: 4px 0; /* tighter spacing between items */
+}
