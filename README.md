@@ -95,6 +95,16 @@ git clone https://github.com/vaishnavi-parodkar/Internship-management-system.git
 ---
 
 ### Student Dashboard
+<img width="1908" height="986" alt="image" src="https://github.com/user-attachments/assets/b1c8918b-d257-4462-ba26-57e871b08be7" />
+
+### Browse Internship
+<img width="1912" height="981" alt="image" src="https://github.com/user-attachments/assets/aeec04ba-6200-4acf-8efa-0d23a1039fb2" />
+
+### My Applications
+<img width="1918" height="988" alt="image" src="https://github.com/user-attachments/assets/9745c230-6add-417f-aba0-404c575f4e6f" />
+
+### Edit Profile 
+<img width="1918" height="978" alt="image" src="https://github.com/user-attachments/assets/e1ad64c8-c95a-412c-9df8-f472a7186045" />
 
 
 ## 🤝 Contributing
