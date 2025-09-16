@@ -26,6 +26,52 @@ A web-based Internship Management System built with PHP and MySQL, designed to s
 - Database: MySQL
 - Version Control: Git & GitHub
 
+## 📁 Project Structure
+```
+📂 Internship-Management-System/
+│
+├── 📂 CSS/
+│  ├── 📜 admin.css
+│  ├── 📜 company_dashboard.css
+│  ├── 📜 create_company.css
+│  ├── 📜 edit_internship.css
+│  ├── 📜 edit_profile.css
+│  ├── 📜 index.css
+│  ├── 📜 manage_applications.css
+│  ├── 📜 manage_companies.css
+│  ├── 📜 manage_internships.css
+│  ├── 📜 manage_users.css
+│  ├── 📜 my_applications.css
+│  ├── 📜 post_internship.css
+│  ├── 📜 student_dashboard.css
+│  ├── 📜 style.css
+│  ├── 📜 view_applicants.css
+│  └── 📜 view_internships.css
+│
+├── 📂 PHP/
+│ ├── 📜 admin.php
+│ ├── 📜 company_dashboard.php
+│ ├── 📜 create_company.php
+│ ├── 📜 delete_internship.php
+│ ├── 📜 edit_internship.php
+│ ├── 📜 edit_profile.php
+│ ├── 📜 index.php
+│ ├── 📜 login.php
+│ ├── 📜 logout.php
+│ ├── 📜 manage_applications.php
+│ ├── 📜 manage_companies.php
+│ ├── 📜 manage_internships.php
+│ ├── 📜 manage_users.php
+│ ├── 📜 my_applications.php
+│ ├── 📜 post_internship.php
+│ ├── 📜 registration.php
+│ ├── 📜 student_dashboard.php
+│ ├── 📜 view_applicants.php
+│ └── 📜 view_internships.php
+│
+├── 📜 database.php
+└── 📜 internship_management.sql
+```
 
 ## 🚀 Installation Guide
 
@@ -115,3 +161,12 @@ Contributions are welcome!
 - Commit your changes git commit -m "Add feature"
 - Push to the branch git push origin feature-name
 - Open a Pull Request
+
+
+## 📬 Contact
+
+For any queries or collaborations, feel free to connect:
+
+**Vaishnavi Parodkar**  
+📧 Email: vaishnaviparodkar@gmail.com
+🔗 GitHub: [@vaishnavi-parodkar](https://github.com/vaishnavi-parodkar)
