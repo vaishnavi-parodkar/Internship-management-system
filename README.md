@@ -47,6 +47,54 @@ git clone https://github.com/vaishnavi-parodkar/Internship-management-system.git
 - Companies/Students: Can register directly via the system.
 
 ## 📈 Screenshots
+### Home Page
+
+<img width="1915" height="988" alt="image" src="https://github.com/user-attachments/assets/b1346b57-3623-409a-bf6c-b284a88d64cd" />
+
+---
+
+### Registration Page
+
+<img width="1915" height="990" alt="image" src="https://github.com/user-attachments/assets/63ab0f68-b1f9-443d-b7e8-d905db5efa53" />
+
+### Login Page
+
+<img width="1917" height="988" alt="image" src="https://github.com/user-attachments/assets/11e1a80b-90b9-43fa-8c7a-aaebfd129c31" />
+
+---
+### Admin Dashboard 
+
+<img width="1913" height="987" alt="image" src="https://github.com/user-attachments/assets/372dd549-7e26-4225-aa83-d00217c26a46" />
+
+### Manage Users
+
+<img width="1918" height="996" alt="image" src="https://github.com/user-attachments/assets/dba40074-97f4-43de-af98-782a9915917e" />
+
+### Manage Companies
+
+<img width="1917" height="998" alt="image" src="https://github.com/user-attachments/assets/8476f598-67cd-49b2-9f96-593714653b35" />
+
+### Manage Internships
+
+<img width="1918" height="985" alt="image" src="https://github.com/user-attachments/assets/dbacc8e0-dfab-46da-9161-7ac44f4d88f1" />
+
+### Manage Applications
+
+<img width="1917" height="991" alt="image" src="https://github.com/user-attachments/assets/0759b093-4ec6-451d-9b05-7dd8b54ee261" />
+
+---
+### Company Dashboard
+<img width="1918" height="991" alt="image" src="https://github.com/user-attachments/assets/9c23f6ff-e80c-419d-9fb8-738a841a1538" />
+
+### Post New Internship
+<img width="1917" height="988" alt="image" src="https://github.com/user-attachments/assets/cb325128-7ef5-47e6-9fd9-6a43d453b26a" />
+
+### View Applicants
+<img width="1918" height="1001" alt="image" src="https://github.com/user-attachments/assets/de7a48e6-9252-4403-a588-cc62fe7e7416" />
+
+---
+
+### Student Dashboard
 
 
 ## 🤝 Contributing
