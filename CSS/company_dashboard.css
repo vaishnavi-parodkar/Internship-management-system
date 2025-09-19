@@ -1,4 +1,3 @@
-/* Page background (consistent with login/admin pages) */
 body {
   min-height: 100vh;
   margin: 0;
@@ -8,20 +7,17 @@ body {
   padding: 20px;
 }
 
-/* Headings */
 h1, h3 {
   color: #f3f4f6;
   font-weight: 600;
 }
 
-/* Company info section */
 .container p {
   font-size: 1rem;
   color: #e5e7eb;
   margin: 5px 0;
 }
 
-/* Buttons */
 .btn {
   border-radius: 8px;
   padding: 10px 20px;
@@ -46,7 +42,6 @@ h1, h3 {
 .btn-warning { background: #d97706; border: none; color: #fff; }
 .btn-warning:hover { background: #b45309; }
 
-/* Internships table */
 .table {
   background: #1f2937;
   color: #f9fafb;
@@ -72,7 +67,6 @@ h1, h3 {
   border: 1px solid #374151 !important;
 }
 
-/* Table action buttons (smaller) */
 .btn-sm {
   padding: 5px 12px;
   font-size: 0.85rem;
