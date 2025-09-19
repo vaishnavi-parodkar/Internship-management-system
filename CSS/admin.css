@@ -1,85 +1,164 @@
-/* Page background (same as login/logout page) */
+/* Page background */
 body {
   min-height: 100vh;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #fff;
+  color: #f3f4f6;
+  overflow-x: hidden;
 }
 
-/* Sidebar hidden on desktop */
+/* Sidebar - hidden on desktop, toggle on mobile */
 .sidebar {
   position: fixed;
-  top: 0; 
-  left: -250px;
+  top: 0;
+  left: -250px; /* hidden by default */
   width: 250px;
-  height: 100%;
-  background: #111827;
-  color: white;
+  height: 100vh;
+  background: rgba(17, 24, 39, 0.95);
   padding: 20px;
   transition: left 0.3s ease;
-  z-index: 1050;
+  z-index: 1000;
 }
-.sidebar.active { left: 0; }
-.sidebar h2 { font-size: 1.4rem; margin-bottom: 20px; }
+
+.sidebar.active {
+  left: 0; /* slide in */
+}
+
+.sidebar h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #38bdf8;
+  text-align: center;
+}
+
 .sidebar a {
   display: block;
-  padding: 10px;
-  margin: 5px 0;
-  color: #d1d5db;
+  color: #e5e7eb;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.2s ease;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
-.sidebar a:hover { background: #374151; color: #fff; }
 
-/* Toggle button (only for small screens) */
+.sidebar a:hover {
+  background: #2563eb;
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+.sidebar .btn-danger {
+  width: 100%;
+  margin-top: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* Menu button */
 .menu-btn {
-  background: #111827;
+  background: #2563eb;
+  color: #fff;
+  font-size: 1.4rem;
   border: none;
-  color: white;
-  font-size: 1.5rem;
-  padding: 8px 12px;
-  border-radius: 5px;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  display: none; /* hidden on large screens */
 }
-.menu-btn:focus { outline: none; }
 
+.menu-btn:focus {
+  outline: none;
+}
+
+/* Main content */
+.content {
+  margin-left: 0;
+  padding: 20px;
+}
+
+/* Hide sidebar & button on large screens */
 @media (min-width: 992px) {
-  .sidebar { display: none; }
-  .menu-btn { display: none; }
+  .sidebar {
+    display: none !important;
+  }
+  .menu-btn {
+    display: none !important;
+  }
+}
+
+/* Show toggle button only on mobile */
+@media (max-width: 991px) {
+  .menu-btn {
+    display: inline-block;
+  }
+}
+
+/* Headings */
+h1, h3 {
+  color: #f9fafb;
+  font-weight: 700;
 }
 
 /* Dashboard cards */
 .card {
+  background: #1f2937;
   border: none;
   border-radius: 12px;
-  padding: 25px;
-  text-align: center;
-  font-weight: bold;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-  transition: transform 0.2s ease-in-out;
-  color: black;   /* white text for contrast */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  color: #e5e7eb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.card:hover { transform: translateY(-5px); }
 
-/* Contrast card colors */
-.bg-students { background: #2563eb; }     /* Deep Blue */
-.bg-companies { background: #059669; }    /* Emerald */
-.bg-internships { background: #d97706; }  /* Warm Amber */
-.bg-applications { background: #dc2626; } /* Strong Red */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+}
 
-/* Section headings */
-h1, h3 {
-  color: #f3f4f6;
+.card-title {
   font-weight: 600;
-}
-.card ul {
-  list-style-type: disc;
-  list-style-position: inside; /* bullets closer to text */
-  margin: 0;
-  padding-left: 0; /* removes extra indent */
+  color: #38bdf8;
 }
 
-.card li {
-  margin: 4px 0; /* tighter spacing between items */
+/* Stat card colors */
+.bg-students {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+}
+.bg-companies {
+  background: linear-gradient(135deg, #16a34a, #065f46);
+}
+.bg-internships {
+  background: linear-gradient(135deg, #f59e0b, #92400e);
+}
+.bg-applications {
+  background: linear-gradient(135deg, #dc2626, #7f1d1d);
+}
+
+/* Quick Links */
+.btn-outline-primary,
+.btn-outline-success,
+.btn-outline-warning,
+.btn-outline-danger {
+  border-width: 2px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-primary:hover {
+  background: #2563eb;
+  color: #fff;
+}
+.btn-outline-success:hover {
+  background: #16a34a;
+  color: #fff;
+}
+.btn-outline-warning:hover {
+  background: #f59e0b;
+  color: #fff;
+}
+.btn-outline-danger:hover {
+  background: #dc2626;
+  color: #fff;
 }
