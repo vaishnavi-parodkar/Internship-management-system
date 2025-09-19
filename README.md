@@ -110,7 +110,7 @@ git clone https://github.com/vaishnavi-parodkar/Internship-management-system.git
 ---
 ### Admin Dashboard 
 
-<img width="1913" height="987" alt="image" src="https://github.com/user-attachments/assets/372dd549-7e26-4225-aa83-d00217c26a46" />
+<img width="1916" height="1001" alt="image" src="https://github.com/user-attachments/assets/cc81dd81-137a-4b7c-b938-11522c2e9440" />
 
 ### Manage Users
 
