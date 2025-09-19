@@ -130,26 +130,33 @@ git clone https://github.com/vaishnavi-parodkar/Internship-management-system.git
 
 ---
 ### Company Dashboard
+
 <img width="1918" height="991" alt="image" src="https://github.com/user-attachments/assets/9c23f6ff-e80c-419d-9fb8-738a841a1538" />
 
 ### Post New Internship
+
 <img width="1917" height="988" alt="image" src="https://github.com/user-attachments/assets/cb325128-7ef5-47e6-9fd9-6a43d453b26a" />
 
 ### View Applicants
+
 <img width="1918" height="1001" alt="image" src="https://github.com/user-attachments/assets/de7a48e6-9252-4403-a588-cc62fe7e7416" />
 
 ---
 
 ### Student Dashboard
-<img width="1908" height="986" alt="image" src="https://github.com/user-attachments/assets/b1c8918b-d257-4462-ba26-57e871b08be7" />
+
+<img width="1918" height="992" alt="image" src="https://github.com/user-attachments/assets/6384fb1b-efab-488b-b4b1-491eabf8d092" />
 
 ### Browse Internship
+
 <img width="1912" height="981" alt="image" src="https://github.com/user-attachments/assets/aeec04ba-6200-4acf-8efa-0d23a1039fb2" />
 
 ### My Applications
+
 <img width="1918" height="988" alt="image" src="https://github.com/user-attachments/assets/9745c230-6add-417f-aba0-404c575f4e6f" />
 
 ### Edit Profile 
+
 <img width="1918" height="978" alt="image" src="https://github.com/user-attachments/assets/e1ad64c8-c95a-412c-9df8-f472a7186045" />
 
 
