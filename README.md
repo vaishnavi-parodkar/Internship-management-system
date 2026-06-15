@@ -86,7 +86,7 @@ git clone https://github.com/vaishnavi-parodkar/Internship-management-system.git
 - Create a database named internship_management.
 - Import the internship_management.sql file from the project folder.
 4. Run the Application
-- Open http://localhost/Internship-management-system/ in your browser.
+- Open http://localhost/Internship-management-system/php/index.php in your browser.
 
 ## 🧑‍💻 Default Login (Optional)
 - Admin: admin@internship.com / admin1234
